@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -11,8 +11,8 @@
     <Product>SelfCQRS</Product>
     <Description>A lightweight CQRS implementation for .NET applications, similar to MediatR.</Description>
     <Copyright>Copyright © 2025</Copyright>
-    <PackageProjectUrl>https://github.com/TeddyLab/SelfCQRS</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/TeddyLab/SelfCQRS</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/teddyez/self-cqrs</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/teddyez/self-cqrs</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>CQRS;Mediator;Command;Query</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -21,6 +21,15 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.8"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="LICENSE" Pack="true" PackagePath="\">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
